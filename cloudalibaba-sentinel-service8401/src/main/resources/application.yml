@@ -1,0 +1,14 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: cloudalibaba-sentinel-service #8401微服务提供者后续将会被纳入阿里巴巴sentinel监管
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848         #Nacos服务注册中心地址
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
